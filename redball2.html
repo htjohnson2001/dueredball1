@@ -6,22 +6,24 @@
             function sayhello(){
                 alert('Hi There');
             }
-            function moveright (){
+            function moveright(){
                 redball.left= redball.left +10;
             }
-            
-            function moveleft (){
+            function moveleft(){
                 redball.left= redball.left -10;
             }
-            
-            function moveup (){
+            function moveup(){
                 redball.top= redball.top -10;
             }
-            
-            function movedown (){
-                redball.top= redball.top +20;
+            function movedown(){
+                redball.top= redball.top +10;
             }
             
+                //slide downright//
+            function movedownright(){
+                movedown();
+                moveright();
+            }
             function movesquare(){
                 //slide to the right//
                 moveright();
@@ -31,15 +33,30 @@
                 moveright();
                 moveright();
                 moveright();
-                redball.top= redball.top +20;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-                redball.left= redball.left +10;
-            
+              //slide down//
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+              //slide left//
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+              //slide up//
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
             }
         </script>
     </head>
@@ -51,5 +68,6 @@
        <button onclick="moveup()">move up</button>
        <button onclick="movedown()">move down</button>
        <button onclick="movesquare()">move square</button>
+       <button onclick="movedownright()">move down right</button>
     </body>
 </html>
