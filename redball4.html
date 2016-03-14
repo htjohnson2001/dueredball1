@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #redball{
+            position:absolute;
+        }
+    </style>
+    <head>
+         <script>
+                function pfadeout(){
+                    var myparagraph=$("#myp");
+                    myparagraph.fadeOut();
+                }
+                function pfadein(){
+                    var myparagraph=$("#myDiv");
+                    myparagraph.fadeIn();
+                }
+                function moveup(){
+                    var ball=$("#redball");
+                    ball.animate({"top":"-=10px"},3000,"linear");
+                }
+        </script>
+        <body>
+           
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+                <p>
+                     Creating Jquery
+                </p>
+                <p id ="myp">
+                   
+                   <div id="myDiv">My Second Paragraph</div> 
+                </p>
+                        <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+                        <button onclick="sayhello()">hello worlds</button> 
+                        <button onclick="moveright()">move right</button>
+                        <button onclick="moveleft()">move left</button>
+                        <button onclick="moveup()">move up</button>
+                        <button onclick="movedown()">move down</button>
+                        <button onclick="moveupright()">move up right</button>
+                        <button onclick="movedownright()">move down right</button>
+                        <button onclick="moveupleft()">move up left</button>
+                        <button onclick="movedownleft()">move down left</button>
+                        <button onclick="movesquare()">move square</button>
+                        <button onclick="octagon()">octagon</button>
+                        <button onclick="triangle()">triangle</button>
+                        <button onclick = "pfadeout()">Fade Out</button>
+                        <button onclick = "pfadein()">Fade In</button>
+        </body>
+    </head>
+</html>
